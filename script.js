@@ -2,6 +2,8 @@ console.log('js');
 
 $(document).ready(onReady);
 
+let totalMonthly = 0;
+
 function onReady() {
     console.log('jQuery');
     $('#submitButton').on('click', clickHandler);
@@ -22,9 +24,3 @@ function addNewEmployee() {
       + $('#newAnnualSalary').val() + '</td></tr>');
 }
 
-function totalMonthly()  {
-    let salary = $('#salary').val()/12;
-    payroll.push(salary.toFixed(2));
-    console.log(payroll);
-    
-}
